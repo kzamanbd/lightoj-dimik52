@@ -1,18 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
 
     int testCase;
     cin >> testCase;
-    while (testCase--)
-    {
+    while (testCase--) {
         double x;
         cin >> x;
         int count = 0;
-        while (x > 1.0)
-        {
+        while (x > 1.0) {
             count++;
             x /= 2;
         }

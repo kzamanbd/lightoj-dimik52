@@ -23,9 +23,11 @@ int main()
     {
         int x, y;
         cin >> x >> y;
-        int num = abs(x - y);
+        int mx = max(x, y);
+        int mn = min(x, y);
         int countPrime = 0;
-        for (int i = x; i <= y; i++)
+
+        for (int i = mn; i <= mx; i++)
         {
             if (isPrime(i))
             {
